@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+    <form wicket:id="lot_form">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" wicket:id="name" id="name">
+                </td>
+                <td>
+                    <div wicket:id="start_price_input_or_current_price_div">
+                        <wicket:fragment wicket:id="start_price_input_fragment">
+                            <input type="text" wicket:id="start_price" id="start_price">
+                        </wicket:fragment>
+                        <wicket:fragment wicket:id="current_price_fragment">
+                            <current_price></current_price>
+                        </wicket:fragment>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" wicket:id="description" id="description">
+                </td>
+            </tr>
+        </table>
+    </form>
+</wicket:panel>
+</body>
+</html>
