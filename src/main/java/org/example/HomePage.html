@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
-    <style>
-        div.center {
-            text-align: center;
-        }
-
-        td.left {
-            text-align: left;
-        }
-
-        td.right {
-            text-align: right;
-        }
-
-        div.justify {
-            text-align: justify;
-        }
-    </style>
 </head>
 <body>
 <table>
     <tr>
-        <td>main text CW  blabla</td>
-        <td class="right">welcome long hexadecimal 0xxxxA</td>
+        <td>main text CW blabla</td>
+        <td class="right" wicket:id="welcome_username_label">welcome long hexadecimal 0xxxxA</td>
     </tr>
     <tr>
         <td>Auction text smthsmth stmh</td>
-        <td class="right">ADD | SEARCH</td>
+        <td class="right">
+            <a href="" wicket:id="new_lot_link">ADD</a> |
+            <a href="" wicket:id="search_link">SEARCH</a> |
+<!--            <a href="" wicket:id="user_lots">MY LOTS</a>-->
+        </td>
     </tr>
 
 </table>
-<br>
-LOT <br>
-LOT <br>
-LOT <br>
-LOT <br>
-LOT <br>
-LOT <br>
+
+<ul>
+    <div wicket:id="lot_list">
+        LOT
+        LOT
+        LOT
+    </div>
+</ul>
+
 </body>
 </html>

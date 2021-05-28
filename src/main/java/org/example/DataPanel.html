@@ -2,23 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:panel>
-    <table>
+<!--    FIXME move width to CSS-->
+    Lot owner: <span wicket:id="owner">0xxxxxxxxxxxxx</span><br>
+    Lot status: <span wicket:id="lotStatus">STATUS</span>
+    <table width="80%">
         <tr>
             <td>
-                name
+                <div wicket:id="name">name</div>
             </td>
             <td>
-                start
+                Initial price: <div class="right" wicket:id="startPrice">startPrice</div>
             </td>
         </tr>
         <tr>
             <td></td>
-            <td>current</td>
+            <td>Current price: <div class="right" wicket:id="lastBid.price">currentPrice</div></td>
         </tr>
         <tr>
             <td>
-                descr
+                Description: <div wicket:id="description">description</div>
             </td>
+            <td></td>
         </tr>
     </table>
 </wicket:panel>

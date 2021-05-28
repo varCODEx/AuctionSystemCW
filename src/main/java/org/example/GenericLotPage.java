@@ -1,10 +1,15 @@
 package org.example;
 
+import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 public class GenericLotPage extends WebPage {
-    public GenericLotPage(PageParameters parameters) {
-        super(parameters);
+
+    public GenericLotPage() {
+        super();
+        setVersioned(false);
+        WebMarkupContainer markupContainer = new WebMarkupContainer("additional_header_component");
+        add(markupContainer);
+        markupContainer.setVisible(false);
     }
 }

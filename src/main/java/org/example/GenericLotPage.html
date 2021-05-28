@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <head>
-    <style>
-        td.left {
-            text-align: left;
-        }
-
-        td.right {
-            text-align: right;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <span id="header_text" wicket:id="header_text_label">Do smth with a lot</span>
-    <span id="header_component_1" class="right" wicket:id="header_component_1">COMP1</span>
-    <span id="header_component_2" class="right" wicket:id="header_component_2">COMP2</span>
+    <div class="right" wicket:id="header_components">components</div>
+    <div class="right" wicket:id="additional_header_component">below_component</div>
     <br>
     <br>
     <div id="content" wicket:id="content">Form or text etc etc</div>

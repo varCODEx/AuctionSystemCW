@@ -6,9 +6,14 @@ import org.apache.wicket.model.IModel;
 public class FormPanel extends Panel {
     public FormPanel(String id) {
         super(id);
+
+        add(new LotForm("lot_form"));
+
     }
 
-    public FormPanel(String id, IModel<?> model) {
-        super(id, model);
+    public FormPanel(String id, Lot lot) {
+        super(id);
+
+        add(new LotForm("lot_form", lot));
     }
 }
